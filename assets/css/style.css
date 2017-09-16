@@ -1,0 +1,6 @@
+#movieGiphys {
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
