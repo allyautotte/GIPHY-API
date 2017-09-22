@@ -13,7 +13,7 @@ function renderButtons() {
     }
    }
  	
-
+//Populates the gifs 
 $('#halloweenButtons').on("click", '.movie', function(){
 	$("#movieGiphys").empty();
 	var movie = $(this).text();
@@ -44,6 +44,7 @@ $('#halloweenButtons').on("click", '.movie', function(){
       
 })
 
+//This event handler changes the images from static to animated
 $(document).on('click', 'giphyImage', function(){
     var state = $(this).data('state'); 
     
@@ -57,7 +58,7 @@ $(document).on('click', 'giphyImage', function(){
 });
 
 
-//This function handles the event when the movie button is clicked
+//This function handles when the movie button is clicked
 //Takes input from the textbox
 //Then adds it to the array
 $("#addMovie").on("click", function() {
