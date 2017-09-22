@@ -17,7 +17,7 @@ function renderButtons() {
 $('#halloweenButtons').on("click", '.movie', function(){
 	$("#movieGiphys").empty();
 	var movie = $(this).text();
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=dc6zaTOxFJmzC&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=dc6zaTOxFJmzC&limit=10";
   $.ajax({
           url: queryURL,
           method: "GET"
